@@ -26,8 +26,6 @@
 
   html {
     height: 100%;
-    font-family: var(--main-font);
-    color: var(--main-color);
     font-size: 16px;
     line-height: 1.1;
   }
@@ -61,26 +59,32 @@
     overflow: auto;
   }
   .logo {
+    box-sizing: border-box;
     margin: 65px auto 0;
     width: 100px;
   }
   .nav {
+    box-sizing: border-box;
     text-align: center;
     margin: 45px auto 0;
   }
-  .nav .nav-item {
+  .nav-item {
     font: 13px var(--nav-font);
     color: var(--header-color);
     margin: 0 19px;
   }
-
-  .main-header .headline {
+  .nav-item:hover {
+   opacity: 0.6;
+  }
+  .headline {
+    box-sizing: border-box;
     font: 53px var(--h1-font);
     text-align: center;
     line-height: 53px;
     margin: 80px auto 0; 
   }
-  .main-header .subtitle {
+  .subtitle {
+    box-sizing: border-box;
     position: relative;
     font: bold 15px var(--main-font);
     text-align: center;
@@ -88,31 +92,32 @@
   }
   .subtitle:before {
     content: url("../image/line.png");
-    text-align: center;
     margin-right: 30px;
     position: relative;
     top: -3px;
   }
   .subtitle:after {
     content: url("../image/line.png");
-    text-align: center;
     margin-left: 30px;
     position: relative;
     top: -3px;
   }
-  .top-header form {
-    margin: 85px auto;
-  }
-  .top-header button {
+  .button {
     display: block;
+    box-sizing: border-box;
     width: 235px;
     height: 50px;
-    background: var(--btn-color);
+    background: var(--btn-bg-color);
     border: none;
     border-radius: 25px;
-    font: 700 15px "PT Sans", sans-serif;
-    color: var(--text-btn-color);
-    margin: 0 auto;
+    font: bold 15px var(--main-font);
+    color: var(--btn-cap-color);
+    text-align: center;
+    line-height: 50px;
+    margin: 85px auto 0;
+  }
+  .button:hover {
+    opacity: 0.6;
   }
 
   main {
