@@ -44,7 +44,7 @@
   }
   .wrapper {
     box-sizing: border-box;
-    width: 73.75%;
+    width: 590px;
     margin: 0 auto;
   }
 
@@ -61,50 +61,44 @@
     overflow: auto;
   }
   .logo {
-    margin: 11% auto 0;
-    width: 18.64%;
+    margin: 65px auto 0;
+    width: 100px;
   }
   .nav {
     text-align: center;
-    margin: 7.63% auto 0;
+    margin: 45px auto 0;
   }
   .nav .nav-item {
-    font-size: 13px;
-    font-family: var(--nav-font);
+    font: 13px var(--nav-font);
     color: var(--header-color);
-    margin: 0 3.22%;
+    margin: 0 19px;
   }
 
   .main-header .headline {
-    font: bold 52px var(--main-font);
+    font: 53px var(--h1-font);
     text-align: center;
-    line-height: 52px;
-    vertical-align: bottom;
-    margin-top: 80px; 
+    line-height: 53px;
+    margin: 80px auto 0; 
   }
   .main-header .subtitle {
-    font: bold 15px "PT Sans", sans-serif;
+    position: relative;
+    font: bold 15px var(--main-font);
     text-align: center;
-    line-height: 24px;
-    margin-top: 45px;
+    margin: 45px auto 0;
   }
-  .top-header p:before {
-    content: "";
-    display: inline-block;
-    background: url("../image/line.png") center no-repeat;
-    width: 100px;
-    height:24px;
-    vertical-align: middle;
+  .subtitle:before {
+    content: url("../image/line.png");
+    text-align: center;
     margin-right: 30px;
+    position: relative;
+    top: -3px;
   }
-  .top-header p:after {
-    content: "";
-    display: inline-block;
-    background: url("../image/line.png") center no-repeat;
-    width: 100px;
-    height:24px;
-    vertical-align: middle;
+  .subtitle:after {
+    content: url("../image/line.png");
+    text-align: center;
     margin-left: 30px;
+    position: relative;
+    top: -3px;
   }
   .top-header form {
     margin: 85px auto;
