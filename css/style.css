@@ -27,6 +27,7 @@
 html, body {
   height: 100%;
   min-width: 320px;
+  min-height: 100%;
   font-size: 16px;
   line-height: 1.1;
   overflow-x: hidden;
@@ -37,6 +38,11 @@ body {
 }
 a {
   text-decoration: none;
+}
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
 }
 .img {
   max-width: 100%;
@@ -100,15 +106,26 @@ a {
 }
 
 .wrapper {
-  width: 600px;
+  max-width: 600px;
   margin: 0 auto;
   padding: 0 5px;
-  overflow: auto;
+  vertical-align: middle;
+  /*min-height: 100%;*/
 }
-.main-header {
-  padding: 65px 0;
+.target-align {
+  display: table-cell;
+  vertical-align: middle;
+}
+.container-align {
+  display: table;
   height: 100%;
-  min-height: 550px;
+  width: 100%;
+}
+
+.main-header {
+  position: relative;
+  padding: 65px;
+  min-height: 100%;
   color: var(--header-color);
   background-color: rgba(16,25,41,0.51);
   background-image: url("../image/bg_image.png");
@@ -119,7 +136,6 @@ a {
 }
 .logo {
   margin: 0 auto;
-  width: 100px;
 }
 .nav {
   text-align: center;
@@ -274,7 +290,7 @@ a {
 }
 .samples-item .headline:last-child::before {
   position: relative;
-  content: url("../image/icon/pencil.svg");
+  content: url("../image/icon/headset.png");
   margin-right: 15px;
 }
 .samples-item .line {
@@ -343,3 +359,23 @@ a {
   margin-left: 20px;
   vertical-align: top;
 }
+/*
+@media screen and (min-width: 320) and (max-width: 599) {
+  .wrapper {
+    min-width: 320px;
+    margin: 0 auto;
+    padding: 0 5px;
+    overflow: auto;
+  }
+  .main-header {
+    width: 20%;
+  }
+  
+}
+.logo {
+  width: 20%;
+}
+
+
+}
+*/
