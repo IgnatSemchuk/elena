@@ -1,9 +1,10 @@
 # Landing page - "Elena"
-----------------
+To look the result page click on [link](https://IgnatSemchuk.github.io/elena-landing/)
+
+---------------
 <img src="https://raw.githubusercontent.com/IgnatSemchuk/elena-landing/master/image/elena-mockup.jpg" alt="elena landing mockup" width="300"/>
 
 ---------------
-To look the result page click on [link](https://IgnatSemchuk.github.io/elena-landing/)
 
 ## Features
 Was made in native HTML, CSS. Used feature:
