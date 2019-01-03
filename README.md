@@ -1,9 +1,11 @@
 # Landing page - "Elena"
 ----------------
-<img src="https://raw.githubusercontent.com/IgnatSemchuk/elena-landing/master/app/elena-preview.jpg" alt="elena landing mockup" width="300"/>
-----------------
+<img src="https://raw.githubusercontent.com/IgnatSemchuk/elena-landing/master/image/elena-mockup.jpg" alt="elena landing mockup" width="300"/>
 
+---------------
 To look the result page click on [link](https://IgnatSemchuk.github.io/elena-landing/)
+
+## Features
 Was made in native HTML, CSS. Used feature:
 - used Meyer reset
 - CSS custom properties `--var`, linear gradient, `calc()` function
