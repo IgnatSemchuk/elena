@@ -1,0 +1,32 @@
+{
+  "name": "elena-landing",
+  "version": "1.0.0",
+  "description": "To look the result page click on [link](https://IgnatSemchuk.github.io/elena-landing/)",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/IgnatSemchuk/elena-landing.git"
+  },
+  "author": "Ignat Semchuk",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/IgnatSemchuk/elena-landing/issues"
+  },
+  "homepage": "https://github.com/IgnatSemchuk/elena-landing#readme",
+  "devDependencies": {
+    "husky": "^1.3.1",
+    "lint-staged": "^8.1.0",
+    "prettier": "^1.15.3"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.{html,css,js}": ["prettier --write", "git add"]
+  }
+}
